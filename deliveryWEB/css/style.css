@@ -1,0 +1,207 @@
+.header{
+    background-color: rgba(6, 131, 62,0.8);
+}
+.logo h1{
+    font-size: 2rem;
+    margin-top: 8px;
+}
+/* .container{
+    border: 2px solid blue;
+    background-color: pink;
+}
+.col-md-4{
+    border: 2px solid red;
+    background-color: green;
+}
+.col-md-8{
+    border: 2px solid black;
+} */
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section h2.section-head{
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-head1{
+    color: white;
+    /* background-color: rgba(24, 23, 23, 0.8); */
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section h2.section-head::after{
+    background-color: rgba(6, 131, 62,0.8);
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+.section h2.section-head1::after{
+    background-color: rgba(6, 131, 62,0.8);
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+#menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu li{
+    display: inline;
+}
+#menu li a{
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+    padding: 15px 10px;
+    /* border: 2px solid darkorange; */
+}
+#menu li a:hover{
+    background-color: rgba(6, 131, 62,0.8);
+}
+#banner{
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.banner-title{
+    padding-top: 5rem;
+}
+.banner-title h1{
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+.banner-title p.lead{
+    color: white;
+    background-color: rgba(6, 131, 62,0.8);
+    padding: 10px;
+}
+.service-box{
+    text-align: center;
+}
+.service-box i.fa-solid,.fa-regular{
+    color: rgba(6, 131, 62,0.8);
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+#testimonial{
+    background: url("../images/finalbg.png.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    position: relative;
+    color:greenyellow;
+    font-size: larger;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.testimonial img{
+    border-radius: 50%;
+    width: 70px;
+    height: 60px;
+}
+
+.news-post h3 a,.readmore{
+    text-decoration: none;
+}
+.readmore{
+    color: green;
+}
+.news-post img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.news-post h3 a{
+    font-size: 1.35rem;
+    color: green;
+}
+.post-date::before{
+    content: "\f073";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+.readmore::after{
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 5px;
+}
+#getHelp{
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+#getHelp li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+
+}
+.footer-Side{
+    color:white;
+    background-color: rgba(12, 116, 10, 0.8);
+}
+
+.sign::after{
+    content: "";
+    background-color: aliceblue;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+.footer{
+    color:white;
+    background-color: rgba(5, 45, 5, 0.8);
+}
+@media (max-width:992px) {
+    .news-post{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .testimonial{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-widget{
+        margin-bottom: 40px;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    #menu{
+        text-align: center;
+    }
+    .service-box{
+        margin-bottom: 40px;
+    }
+
+    .shark{
+        margin-top: 20px;
+    }
+    .banner-title{
+        padding: 0;
+    }
+    .banner-title h1{
+        font-size: 1rem;
+    }
+    .banner-title p{
+        font-size: 1rem;
+    }
+
+}
