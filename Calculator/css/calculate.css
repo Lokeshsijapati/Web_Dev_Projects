@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calculator {
+  display: flex;
+  width: 100vw;
+  height: 500px;
+  background-color: rgba(243, 100, 100, 0.66);
+  justify-content: center;
+}
+
+.cal-ele {
+  width: 15vw;
+  height: 300px;
+  /* height: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: rgb(135, 122, 250);
+  border-radius: 15px;
+  margin: auto auto;
+}
+
+.cal-ele button {
+  width: 40px;
+  padding: 16px;
+  margin: 1.2px;
+  font-weight: bold;
+}
+
+.cal-ele input[type="text"] {
+  width: 228px;
+  height: 30px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.cal-ele button:nth-of-type(12) {
+  padding-left: 12px;
+}
+
+.cal-ele button:nth-of-type(16) {
+  padding-left: 0;
+  padding-right: 0;
+}

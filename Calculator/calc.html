@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/calculate.css">
+</head>
+<body>
+  <main>
+    <div class="calculator">
+      <div class="cal-ele">
+        <input type="text" id="screen" readonly>
+        <br>
+        <button class="btn" onclick="screen.value='';">C</button>
+        <button class="btn" onclick="screen.value+='1';">1</button>
+        <button class="btn" onclick="screen.value+='2';">2</button>
+        <button class="btn" onclick="screen.value+='3';">3</button>
+        <button class="btn" onclick="screen.value+='4';">4</button>
+        <br>
+        <button class="btn" onclick="screen.value+='5';">5</button>
+        <button class="btn" onclick="screen.value+='6';">6</button>
+        <button class="btn" onclick="screen.value+='7';">7</button>
+        <button class="btn" onclick="screen.value+='8';">8</button>
+        <button class="btn" onclick="screen.value+='9';">9</button>
+        <br>
+        <button class="btn" onclick="screen.value+='0';">0</button>
+        <button class="btn" onclick="screen.value+='00';">00</button>
+        <button class="btn" onclick="screen.value+='.';"><b>.</b></button>
+        <button class="btn" onclick="screen.value+='%';">%</button>
+        <button class="btn" onclick="screen.value+='-';">-</button>
+        <br>
+        <button class="btn" onclick="screen.value=screen.value.toString().slice(0,-1)">Rev</button>
+        <button class="btn" onclick="screen.value+='/';">/</button>
+        <button class="btn" onclick="screen.value+='*';">*</button>
+        <button class="btn" onclick="Res()">=</button>
+        <button class="btn" onclick="screen.value+='+';">+</button>
+      </div>
+    </div>
+  </main>
+
+
+  <script>
+    let screen = document.querySelector('#screen');
+    let data = document.querySelector('.btn'); 
+    function Res()
+    {  
+     let res=eval(screen.value);
+     if(res==undefined)
+    {
+      screen.value='0';
+    }
+    else
+    {
+      screen.value=res; 
+    }
+    }
+  </script>
+</body>
+
+</html>
