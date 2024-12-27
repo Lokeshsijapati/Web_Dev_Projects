@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-item">
+      <ul>
+        <li>Home</li>
+        <li>Gallery</li>
+        <li>Details</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="head-ele">
+      <div class="head-img">
+        <img src="images/4image.png" alt="">
+      </div>
+      
+      <div class="head-img">
+        <img src="images/3image.png" alt="">
+      </div>
+      
+      <div class="head-img">
+        <img src="images/2images.png" alt="">
+      </div>
+      
+      <div class="head-img">
+        <img src="images/5images.png" alt="">
+      </div>
+      <div class="head-img">
+        <img src="images/3image.png" alt="">
+      </div>
+      <div class="prev" onclick="prev()">
+       <button><</button>
+      </div>
+      <div class="next" onclick="next()">
+      <button>></button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <script>
+    let head=document.querySelectorAll(".head-img");
+    let num=0;
+    console.log(head);
+    head.forEach((slide,index)=>{
+      slide.style.left=`${index*100}%`;
+    })
+   function next(){
+      num++;
+      if(num==head.length){
+        num=0;
+      }
+      slides();
+    }
+    function prev(){
+      // alert(num)
+      if(num==0)
+      {
+       num=4;
+      }
+      else{
+        num--;
+      }
+      slides();
+    }
+    let slides=()=>{
+      head.forEach((slide)=>{
+      slide.style.transform=`translateX(-${num*100}%)`;
+      })
+    }
+
+// nav
+window.addEventListener("scroll",()=>{
+  let nav=document.querySelector('.nav-item');
+  nav.classList.toggle("nav-fixed",window.scrollY>0);
+})
+
+  
+  </script>
+</body>
+</html>
