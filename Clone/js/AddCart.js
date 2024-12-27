@@ -96,7 +96,8 @@ function remove(id) {
   cpyData.splice(id, 1);
   localStorage.setItem("bagdata", JSON.stringify(cpyData));
   CartItem.innerHTML='';
-  onload()
+  // onload()
+    window.location.reload();
 }
 
 function lok()
