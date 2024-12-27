@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 600px;
+  background-color: rgb(202, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container button{
+  padding:10px 25px 10px 25px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+.pop-up{
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  transition: all 2s;
+  visibility: hidden;
+}
+.pop-up h3{
+  margin-top: 40px;
+  margin-left: 5px;
+  margin-bottom: 40px;
+}
+.pop-up button{
+  margin-left: 80px;
+}
+.open{
+ visibility: visible;
+ transform: translate(-50%,-50%) scale(1);
+ top: 30%;
+}
