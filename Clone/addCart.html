@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <div class="nav-ele">
+      <div class="box">
+        <input type="checkbox" name="" id="check">
+        <label class="hamburger" for="check" onclick="show()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="buttons">
+        <button>LogIn</button>
+     <!-- <button class="Cart"><i class="fa-solid fa-cart-plus fa-xs icon"></i>Cart</button> -->
+      </div>
+    </div>
+  </nav> 
+  <div class="fluid-container side">
+    <div class="row">
+      <div class="col-12">
+        <h2>Welcome, Online Shop</h2>
+      </div>
+      <div class="col-12">
+        <button><a href="index.html">Home</a></button>
+      </div>
+      <div class="col-12">
+        <button>Offer Zone</button>
+      </div>
+      <div class="col-12">
+        <button>All Catagories</button>
+      </div>
+      <div class="col-12">
+        <button>My Order</button>
+      </div>
+      <div class="col-12">
+        <button>My Account</button>
+      </div>
+      <div class="col-12">
+        <button>Help Center</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fluid-container cart">
+   <div class="row">
+    <div class="col-md-8" id="cartsItem">
+      <!-- <div class="products-data">
+         <div class="row">
+          <div class="col-md-3 pro-img">
+            <img src="pro-image/camera.png" alt="">
+          </div>
+          <div class="col-md-9">
+            <div class="pro-detail">
+              <h3>IQ z9s pro 5G</h3>
+            </div>
+            <div class="pro-price">
+              <h6>₹49000</h6>
+            </div>
+             <div class="pro-val">
+              <button onclick="decrease()">-</button>
+              <button id="peace">1</button>
+              <button onclick="increase()">+</button>
+              <button onclick="remove()">Remove</button>
+             </div>
+          </div>
+         </div>
+      </div> -->
+    </div>
+    <div class="col-md-4 amount">
+      <!-- <h3>Total Summary</h3>
+     <table>
+      <tr>
+        <td>Total MRP</td><td>12000</td>
+      </tr>
+      <tr>
+        <td>Discount On MRP </td><td>10%</td>
+      </tr>
+      <tr>
+        <td>Delvery Charge</td><td>66</td>
+      </tr>
+      <tr>
+        <td>Total Amount</td><td>12010</td>
+      </tr>
+     </table> -->
+
+    </div>
+   </div>
+  </div>
+
+
+<!-- Footer -->
+<div class="fluid-container mt-3 Footer">
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+ </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/first.js"></script>
+  <script src="js/AddCart.js"></script>
+  <script src="js/Cart.js"></script>
+</body>
+</html>
