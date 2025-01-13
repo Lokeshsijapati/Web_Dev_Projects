@@ -3,7 +3,9 @@ function AllFunction() {
   PriceList();
   lok();
 }
-let data = [];
+let data = [
+];
+localStorage.setItem("bagdata", JSON.stringify(data));
 data = JSON.parse(localStorage.getItem("bagdata"));
 let CartItem;
 let cpyData;
@@ -97,7 +99,7 @@ function remove(id) {
   localStorage.setItem("bagdata", JSON.stringify(cpyData));
   CartItem.innerHTML='';
   // onload()
-    window.location.reload();
+  window.location.reload();
 }
 
 function lok()
