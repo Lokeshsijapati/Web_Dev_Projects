@@ -1,0 +1,206 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 15, 2025, 6:57:25 PM
+    Author     : lokesh
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pannels {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/bg.jpeg");
+  display: flex;
+}
+.employe {
+  width: 25%;
+  height: 500px;
+  /* background-color: aqua; */
+  background: rgb(0,255,86);
+background: linear-gradient(49deg, rgb(0, 229, 255) 0%, rgb(251, 246, 251) 69%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.emp-image{
+  width: 70%;
+}
+.emp-image img{
+  width: 90%;
+  margin-left: 12px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+.emp-btn button, .adm-btn button{
+   padding:5px 25px 5px 25px;
+   border-radius: 10px;
+}
+.emp-btn button:hover{
+  font-size: larger;
+  background-color: rgb(8, 239, 81);
+}
+.admin {
+  width: 25%;
+  height: 500px;
+  /* background-color: gray; */
+  background: rgb(0,255,86);
+background: linear-gradient(130deg, rgb(0, 229, 255) 0%, rgb(251, 246, 251) 69%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.adm-image{
+  width: 70%;
+}
+.adm-image img{
+  width: 90%;
+  margin-left: 12px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+.adm-btn button{
+  padding:5px 25px 5px 25px;
+}
+.adm-btn button:hover{
+  font-size: larger;
+  background-color: rgb(8, 166, 239);
+}
+.adminLogin {
+  width: 25%;
+  height: 500px;
+  background-color: blue; 
+  position: absolute;
+  transform: translateX(-500px);
+  transition: all 0.5s ease-in;
+}
+.employeSign{
+  width: 25%;
+  height: 500px;
+  position: absolute;
+  background-color: red;
+  transform: translateX(-500px);
+  transition: all 0.5s ease-in;
+}
+.adminLogin-js{
+  transform: translateX(0);
+}
+.empLogin-js{
+  transform: translateX(380px);
+}
+.login-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #3a3d41, #333);
+}
+
+.login-box {
+  width: 300px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  font-weight: 600;
+  color: #333;
+}
+.login-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input[type="text"], .form-group input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  font-size: 14px;
+  color: #666;
+  transition: 0.2s ease-in-out;
+  /* display: none; */
+  visibility: hidden;
+  /* transition: all 2s ease; */
+}
+.form-group input:focus + label {
+  top: -15px;
+  left: 2;
+  font-size: 12px;
+  color: #333;
+  /* display: block; */
+  visibility: visible;
+  /* transition: all 2s ease; */
+}
+
+.login-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #3e8e41;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #4CAF50;
+}
+
